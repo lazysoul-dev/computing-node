@@ -1,0 +1,27 @@
+{
+  "main": "index.js",
+  "name": "computing-node",
+  "description": "Package for improving perfomance of computing tasks in Node.js",
+  "author": "Ilya Guseynov <ilya.guseuynov.self@yandex.ru>",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "ptest:fibonacci": "node ./scripts/ptest_fibonnaci.js",
+    "ptest:catalan": "node ./scripts/ptest_catalan.js",
+    "ptest:eulerTotient": "node ./scripts/ptest_eulerTotient.js",
+    "ptest:binomialCoeff": "node ./scripts/ptest_binomialCoeff.js",
+    "ptest:newmanConway": "node ./scripts/ptest_newmanConway.js",
+    "ptest:estimatePiNumber": "node ./scripts/ptest_estimatePiNumber.js",
+    "ptest:matrixSum": "node ./scripts/ptest_matrixSum.js",
+    "ptest:bubbleSort": "node ./scripts/ptest_bubbleSort.js"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.8.0"
+  },
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "bindings": "^1.3.0",
+    "nan": "^2.11.1",
+    "segfault-handler": "^1.3.0"
+  }
+}
